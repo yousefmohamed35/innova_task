@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:invotask/core/image.dart';
 
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
@@ -12,9 +14,10 @@ class DashboardView extends StatelessWidget {
             child: Column(
           children: [
             Container(
+              color: Colors.black,
               child: ListTile(
                 leading: CircleAvatar(
-                  child: Svg,
+                  backgroundImage: AssetImage(AppImage.profileImage),
                 ),
                 title: Text('mohsen'),
                 subtitle: Text('senior'),

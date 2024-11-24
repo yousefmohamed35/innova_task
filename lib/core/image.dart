@@ -1,3 +1,3 @@
 abstract class AppImage {
-  static String profileImage = 'assets/image/profilephoto.svg';
+  static String profileImage = 'assets/image/pf.png';
 }
