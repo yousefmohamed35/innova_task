@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:invotask/core/text_style.dart';
 import 'package:invotask/core/widgets/custom_drawer_header.dart';
 import 'package:invotask/core/widgets/custom_trail_drawer.dart';
 
@@ -25,7 +23,7 @@ class DashboardView extends StatelessWidget {
                     children: List.generate(20, (index) {
                       return ListTile(
                         leading: Icon(
-                          Icons.search,
+                          Icons.search_sharp,
                           color: Colors.white,
                         ),
                         title: Text('Researsh'),
