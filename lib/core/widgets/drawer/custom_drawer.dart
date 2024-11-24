@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:invotask/core/widgets/drawer_body.dart';
+import 'package:invotask/core/widgets/drawer/drawer_body.dart';
 import 'custom_drawer_header.dart';
 import 'custom_trail_drawer.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:invotask/core/image.dart';
-import 'package:invotask/core/widgets/drawer_item.dart';
-import 'package:invotask/core/widgets/normal_item.dart';
-import 'package:invotask/core/widgets/sub_item.dart';
+import 'package:invotask/core/widgets/drawer/drawer_item.dart';
+import 'package:invotask/core/widgets/drawer/normal_item.dart';
+import 'package:invotask/core/widgets/drawer/sub_item.dart';
 import 'package:invotask/features/dashboard/data/data.dart';
 
 class DrawerBody extends StatelessWidget {

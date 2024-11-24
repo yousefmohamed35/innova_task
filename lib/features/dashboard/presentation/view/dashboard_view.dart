@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:invotask/core/widgets/custom_drawer.dart';
+import 'package:invotask/core/widgets/drawer/custom_drawer.dart';
 
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
