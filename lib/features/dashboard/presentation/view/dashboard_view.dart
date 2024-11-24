@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:invotask/core/image.dart';
+
+import 'package:invotask/core/widgets/custom_drawer_header.dart';
 
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
@@ -11,20 +11,12 @@ class DashboardView extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(),
         drawer: Drawer(
+            shape: RoundedRectangleBorder(),
             child: Column(
-          children: [
-            Container(
-              color: Colors.black,
-              child: ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage(AppImage.profileImage),
-                ),
-                title: Text('mohsen'),
-                subtitle: Text('senior'),
-              ),
-            ),
-          ],
-        )),
+              children: [
+                CustomDrawerHeader(),
+              ],
+            )),
       ),
     );
   }

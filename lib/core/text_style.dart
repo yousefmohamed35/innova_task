@@ -6,7 +6,7 @@ abstract class TextStyles {
     return TextStyle(
       color: color ?? Colors.white,
       fontSize: fontSize ?? 16.sp,
-      fontFamily: 'Metrophobic',
+      fontFamily: 'SF Pro Display',
       fontWeight: FontWeight.w400,
     );
   }
@@ -15,7 +15,7 @@ abstract class TextStyles {
     return TextStyle(
       color: color ?? Colors.white,
       fontSize: fontSize ?? 16.sp,
-      fontFamily: 'Metrophobic',
+      fontFamily: 'SF Pro Display',
       fontWeight: FontWeight.w500,
     );
   }
@@ -24,7 +24,7 @@ abstract class TextStyles {
     return TextStyle(
       color: color ?? Colors.white,
       fontSize: fontSize ?? 16.sp,
-      fontFamily: 'Metrophobic',
+      fontFamily: 'SF Pro Display',
       fontWeight: FontWeight.w600,
     );
   }
@@ -33,7 +33,7 @@ abstract class TextStyles {
     return TextStyle(
       color: color ?? Colors.white,
       fontSize: fontSize ?? 16.sp,
-      fontFamily: 'Metrophobic',
+      fontFamily: 'SF Pro Display',
       fontWeight: FontWeight.w700,
     );
   }
