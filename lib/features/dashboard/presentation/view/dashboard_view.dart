@@ -14,7 +14,7 @@ class DashboardView extends StatelessWidget {
             Container(
               child: ListTile(
                 leading: CircleAvatar(
-                  
+                  child: Svg,
                 ),
                 title: Text('mohsen'),
                 subtitle: Text('senior'),
