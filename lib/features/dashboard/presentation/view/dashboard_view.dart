@@ -5,6 +5,24 @@ class DashboardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(),
+        drawer: Drawer(
+            child: Column(
+          children: [
+            Container(
+              child: ListTile(
+                leading: CircleAvatar(
+                  
+                ),
+                title: Text('mohsen'),
+                subtitle: Text('senior'),
+              ),
+            ),
+          ],
+        )),
+      ),
+    );
   }
 }
