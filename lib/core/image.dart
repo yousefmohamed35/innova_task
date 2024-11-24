@@ -10,5 +10,6 @@ abstract class AppImage {
   static String taskImage = 'assets/image/taskicon.svg';
   static String teamImage = 'assets/image/team.svg';
   static String ticketingImage = 'assets/image/ticketing.svg';
-
+  static String newProjectImage = 'assets/image/newproject.svg';
+  static String myProjectImage = 'assets/image/myproject.svg';
 }
