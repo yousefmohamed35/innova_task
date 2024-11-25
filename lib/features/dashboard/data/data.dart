@@ -7,6 +7,8 @@ import 'package:invotask/features/dashboard/presentation/models/dashboard_card_m
 import 'package:invotask/features/dashboard/presentation/models/drawer_body_model.dart';
 import 'package:invotask/features/dashboard/presentation/models/user_data_model.dart';
 
+import '../presentation/models/projects_model.dart';
+
 List<DrawerBodyModel> drawerBodyList = [
   DrawerBodyModel(
     tile: 'Researsh',
@@ -131,4 +133,21 @@ List<DataColumn> dataColumns = [
       SvgPicture.asset(AppImage.doubleArrowWhiteImage),
     ],
   )),
+];
+
+List<ProjectsModel> projects = [
+  ProjectsModel(
+      name: 'First Research Project', status: 'On Going', color: 0xff40C3F4),
+  ProjectsModel(
+      name: 'Second Research Project', status: 'Delayed', color: 0xffFE861F),
+  ProjectsModel(
+      name: 'Third Research Project', status: 'Completed', color: 0xff53A501),
+  ProjectsModel(
+      name: 'Fourth Research Project', status: 'Delayed', color: 0xffFE861F),
+  ProjectsModel(
+      name: 'Fifth Research Project', status: 'Delayed', color: 0xffFE861F),
+  ProjectsModel(
+      name: 'Sixth Research Project', status: 'On Going', color: 0xff40C3F4),
+  ProjectsModel(
+      name: 'Seventh Research Project', status: 'Completed', color: 0xff53A501),
 ];
