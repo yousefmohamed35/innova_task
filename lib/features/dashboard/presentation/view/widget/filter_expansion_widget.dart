@@ -14,6 +14,7 @@ class FilterExpansionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ExpansionTile(
+      shape: Border.all(width: 0),
       onExpansionChanged: onExpansionChanged,
       childrenPadding: EdgeInsets.symmetric(horizontal: 16),
       title: Text(

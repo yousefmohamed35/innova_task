@@ -16,7 +16,7 @@ class CustomButton extends StatelessWidget {
           style: ButtonStyle(
             shape: WidgetStatePropertyAll(
               RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(12),
               ),
             ),
           ),
