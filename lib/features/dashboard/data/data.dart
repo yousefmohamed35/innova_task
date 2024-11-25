@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:invotask/core/image.dart';
+import 'package:invotask/features/dashboard/presentation/models/dashboard_card_model.dart';
 import 'package:invotask/features/dashboard/presentation/models/drawer_body_model.dart';
 
 List<DrawerBodyModel> drawerBodyList = [
@@ -45,4 +46,15 @@ List<DrawerBodyModel> drawerBodyList = [
     tile: 'Ticketing',
     image: AppImage.ticketingImage,
   ),
+];
+
+List<DashboardCardModel> dashboardCardList = [
+  DashboardCardModel(image: AppImage.userImage, text: 'User Involoved'),
+  DashboardCardModel(
+      image: AppImage.equipmentImage, text: 'Equipment Available'),
+  DashboardCardModel(image: AppImage.tasksImage, text: 'Tasks Completed'),
+  DashboardCardModel(image: AppImage.tasksImage, text: 'Tasks Completed'),
+  DashboardCardModel(
+      image: AppImage.equipmentImage, text: 'Equipment Available'),
+  DashboardCardModel(image: AppImage.userImage, text: 'User Involoved'),
 ];

@@ -12,4 +12,7 @@ abstract class AppImage {
   static String ticketingImage = 'assets/image/ticketing.svg';
   static String newProjectImage = 'assets/image/newproject.svg';
   static String myProjectImage = 'assets/image/myproject.svg';
+  static String userImage = 'assets/image/user.svg';
+  static String tasksImage = 'assets/image/tsk.svg';
+  static String equipmentImage = 'assets/image/equipment.svg';
 }
