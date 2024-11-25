@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:invotask/core/image.dart';
+import 'package:invotask/core/text_style.dart';
 import 'package:invotask/features/dashboard/presentation/models/dashboard_card_model.dart';
 import 'package:invotask/features/dashboard/presentation/models/drawer_body_model.dart';
 import 'package:invotask/features/dashboard/presentation/models/user_data_model.dart';
@@ -99,4 +100,35 @@ final List<UserDataModel> row = [
       Icons.folder_copy
     ],
   )
+];
+
+List<DataColumn> dataColumns = [
+  DataColumn(
+      label: Expanded(
+    child: Row(
+      children: [
+        Text(
+          'Research Name',
+          style: TextStyles.styleMedium(BuildContext, fontSize: 14),
+        ),
+        SizedBox(
+          width: 10.w,
+        ),
+        SvgPicture.asset(AppImage.doubleArrowWhiteImage),
+      ],
+    ),
+  )),
+  DataColumn(
+      label: Row(
+    children: [
+      Text(
+        'Status',
+        style: TextStyles.styleMedium(BuildContext, fontSize: 14),
+      ),
+      SizedBox(
+        width: 10.w,
+      ),
+      SvgPicture.asset(AppImage.doubleArrowWhiteImage),
+    ],
+  )),
 ];

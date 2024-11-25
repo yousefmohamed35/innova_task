@@ -11,20 +11,22 @@ class SearchRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: SizedBox(
-            height: 40.h,
-            child: TextFieldWidget(),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8),
+      child: Row(
+        children: [
+          Expanded(
+            child: SizedBox(
+              height: 40.h,
+              child: TextFieldWidget(),
+            ),
           ),
-        ),
-        SizedBox(
-          width: 10,
-        ),
-        CustomCountListWidget()
-      ],
+          SizedBox(
+            width: 10,
+          ),
+          CustomCountListWidget()
+        ],
+      ),
     );
   }
 }
-
