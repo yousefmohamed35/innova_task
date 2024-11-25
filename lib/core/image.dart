@@ -17,4 +17,7 @@ abstract class AppImage {
   static String equipmentImage = 'assets/image/equipment.svg';
   static String doubleArrowImage = 'assets/image/arrowicon.svg';
   static String calendarImage = 'assets/image/calendar.svg';
+  static String creatorImage = 'assets/image/creator.png';
+  static String assigned1Image = 'assets/image/assigned1.png';
+  static String assigned2Image = 'assets/image/assigned2.png';
 }

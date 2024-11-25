@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:invotask/core/image.dart';
 import 'package:invotask/features/dashboard/presentation/models/dashboard_card_model.dart';
 import 'package:invotask/features/dashboard/presentation/models/drawer_body_model.dart';
+import 'package:invotask/features/dashboard/presentation/models/user_data_model.dart';
 
 List<DrawerBodyModel> drawerBodyList = [
   DrawerBodyModel(
@@ -83,3 +84,19 @@ List<DataColumn> getColumns(List<String> columns) => columns
                 ),
         ))
     .toList();
+
+final List<UserDataModel> row = [
+  UserDataModel(
+    teamName: 'Design Team',
+    creatorName: 'Mohsin Faraz',
+    creatorImage: AppImage.creatorImage,
+    images: [AppImage.assigned1Image, AppImage.assigned2Image],
+    deadline: 'Dec 26, 2023',
+    status: 'On Going',
+    actionIcons: [
+      Icons.edit_outlined,
+      Icons.message_outlined,
+      Icons.folder_copy
+    ],
+  )
+];
