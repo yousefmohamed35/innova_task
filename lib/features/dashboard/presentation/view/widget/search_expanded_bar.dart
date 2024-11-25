@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:invotask/core/text_style.dart';
-import 'package:invotask/core/widgets/text_field_widget.dart';
-
-import 'custom_count_list_widget.dart';
+import 'search_row.dart';
 
 class SearchExpandedBar extends StatelessWidget {
   const SearchExpandedBar({super.key});
@@ -27,20 +24,7 @@ class SearchExpandedBar extends StatelessWidget {
             color: Color(0xff474747),
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: SizedBox(
-                        height: 40.h,
-                        child: TextFieldWidget(),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    CustomCountListWidget()
-                  ],
-                ),
+                SearchRow(),
               ],
             ),
           )
@@ -49,4 +33,3 @@ class SearchExpandedBar extends StatelessWidget {
     );
   }
 }
-
