@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:invotask/core/text_style.dart';
+import 'package:invotask/core/widgets/text_field_widget.dart';
 
 class SearchExpandedBar extends StatelessWidget {
   const SearchExpandedBar({super.key});
@@ -17,7 +19,47 @@ class SearchExpandedBar extends StatelessWidget {
           style: TextStyles.styleSemiBold(context,
               fontSize: 14, color: Color(0xff474747)),
         ),
-        children: [],
+        children: [
+          Container(
+            padding: EdgeInsets.all(8),
+            color: Color(0xff474747),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: SizedBox(
+                        height: 40.h,
+                        child: TextFieldWidget(),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 40.h,
+                      width: 77.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('10'),
+                          SizedBox(width: 6),
+                          Icon(
+                            Icons.expand_more,
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
