@@ -14,6 +14,7 @@ class CalendarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
       children: [
         Text(title),
         SizedBox(
@@ -21,7 +22,7 @@ class CalendarWidget extends StatelessWidget {
         ),
         Container(
           height: 40,
-          width: 143.5,
+          padding: EdgeInsets.all(8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             border: Border.all(color: Colors.black),

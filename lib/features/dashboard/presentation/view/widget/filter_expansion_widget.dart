@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:invotask/core/image.dart';
 import 'package:invotask/core/text_style.dart';
-import 'package:invotask/core/widgets/calendar_widget.dart';
-
+import 'date_filter_widget.dart';
 import 'search_row.dart';
 
 class FilterExpansionWidget extends StatelessWidget {
@@ -27,27 +24,9 @@ class FilterExpansionWidget extends StatelessWidget {
       ),
       children: [
         SearchRow(),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: Colors.white,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              CalendarWidget(
-                title: 'Deadline:',
-                name: 'Starting Date',
-              ),
-              CalendarWidget(
-                title: 'Until:',
-                name: 'Ending Date',
-              ),
-            ],
-          ),
-        )
+        SizedBox(height: 16),
+        DateFilterWidget(),
       ],
     );
   }
 }
-
