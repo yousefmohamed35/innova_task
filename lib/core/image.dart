@@ -15,4 +15,6 @@ abstract class AppImage {
   static String userImage = 'assets/image/user.svg';
   static String tasksImage = 'assets/image/tsk.svg';
   static String equipmentImage = 'assets/image/equipment.svg';
+  static String doubleArrowImage = 'assets/image/arrowicon.svg';
+  static String calendarImage = 'assets/image/calendar.svg';
 }
