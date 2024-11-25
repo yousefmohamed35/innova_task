@@ -4,14 +4,21 @@ import 'package:invotask/features/dashboard/data/data.dart';
 import 'filter_expansion_widget.dart';
 import 'search_row.dart';
 
-class SearchExpandedBar extends StatelessWidget {
+class SearchExpandedBar extends StatefulWidget {
   const SearchExpandedBar({super.key, required this.onExpansionChanged});
   final ValueChanged<bool> onExpansionChanged;
+
+  @override
+  State<SearchExpandedBar> createState() => _SearchExpandedBarState();
+}
+
+class _SearchExpandedBarState extends State<SearchExpandedBar> {
+  bool isExpanded = false;
   @override
   Widget build(BuildContext context) {
     return Card(
       child: ExpansionTile(
-        onExpansionChanged: onExpansionChanged,
+        onExpansionChanged: widget.onExpansionChanged,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
@@ -29,8 +36,14 @@ class SearchExpandedBar extends StatelessWidget {
             color: Color(0xff474747),
             child: Column(
               children: [
-                SearchRow(),
-                FilterExpansionWidget(),
+                if (!isExpanded) SearchRow(),
+                FilterExpansionWidget(
+                  onExpansionChanged: (bool value) {
+                    setState(() {
+                      isExpanded = value;
+                    });
+                  },
+                ),
                 Divider(),
               ],
             ),
@@ -91,4 +104,3 @@ class CustomProjectTable extends StatelessWidget {
     );
   }
 }
-

@@ -21,4 +21,5 @@ abstract class AppImage {
   static String assigned1Image = 'assets/image/assigned1.png';
   static String assigned2Image = 'assets/image/assigned2.png';
   static String doubleArrowWhiteImage = 'assets/image/doublearrowhite.svg';
+  static String blackCalendarImage = 'assets/image/blackcalendar.svg';
 }
