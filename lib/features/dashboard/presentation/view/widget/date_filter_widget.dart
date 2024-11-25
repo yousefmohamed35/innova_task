@@ -14,7 +14,6 @@ class DateFilterWidget extends StatelessWidget {
       child: Container(
         height: 93.h,
         width: 311.w,
-        margin: EdgeInsets.symmetric(horizontal: 8),
         padding: EdgeInsets.symmetric(horizontal: 8),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
