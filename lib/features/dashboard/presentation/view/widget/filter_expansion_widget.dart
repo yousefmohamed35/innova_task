@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:invotask/core/text_style.dart';
 import 'date_filter_widget.dart';
+import 'project_filter_status.dart';
 import 'search_row.dart';
 
 class FilterExpansionWidget extends StatelessWidget {
@@ -26,7 +27,10 @@ class FilterExpansionWidget extends StatelessWidget {
         SearchRow(),
         SizedBox(height: 16),
         DateFilterWidget(),
+        SizedBox(height: 16),
+        ProjectFilterStatus(),
       ],
     );
   }
 }
+

@@ -22,7 +22,7 @@ class CalendarWidget extends StatelessWidget {
         ),
         Container(
           height: 40,
-          padding: EdgeInsets.all(8),
+          width: 143.5,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             border: Border.all(color: Colors.black),

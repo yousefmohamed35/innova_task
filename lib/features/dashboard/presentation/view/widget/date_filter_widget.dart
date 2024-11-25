@@ -9,29 +9,30 @@ class DateFilterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 93.h,
-      width: 311.w,
-      margin: EdgeInsets.symmetric(horizontal: 8),
-      padding: EdgeInsets.symmetric(horizontal: 8),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        color: Colors.white,
-      ),
-      child: Row(
-        children: [
-          CalendarWidget(
-            title: 'Deadline:',
-            name: 'Starting Date',
-          ),
-          SizedBox(
-            width: 5,
-          ),
-          CalendarWidget(
-            title: 'Until:',
-            name: 'Ending Date',
-          ),
-        ],
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Container(
+        height: 93.h,
+        width: 311.w,
+        margin: EdgeInsets.symmetric(horizontal: 8),
+        padding: EdgeInsets.symmetric(horizontal: 8),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          color: Colors.white,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            CalendarWidget(
+              title: 'Deadline:',
+              name: 'Starting Date',
+            ),
+            CalendarWidget(
+              title: 'Until:',
+              name: 'Ending Date',
+            ),
+          ],
+        ),
       ),
     );
   }

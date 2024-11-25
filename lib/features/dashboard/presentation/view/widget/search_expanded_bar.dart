@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:invotask/core/text_style.dart';
-import 'package:invotask/features/dashboard/data/data.dart';
 import 'custom_project_table.dart';
 import 'filter_expansion_widget.dart';
 import 'search_row.dart';
@@ -55,4 +54,3 @@ class _SearchExpandedBarState extends State<SearchExpandedBar> {
     );
   }
 }
-
