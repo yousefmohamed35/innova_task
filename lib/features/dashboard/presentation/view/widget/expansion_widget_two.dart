@@ -24,7 +24,7 @@ class ExpansionWidgetTwo extends StatelessWidget {
             color: Colors.white,
           ),
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(bottom: 8),
             child: CustomDataTable(),
           ),
         ),
@@ -32,4 +32,3 @@ class ExpansionWidgetTwo extends StatelessWidget {
     );
   }
 }
-

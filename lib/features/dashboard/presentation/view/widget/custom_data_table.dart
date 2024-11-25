@@ -10,6 +10,7 @@ class CustomDataTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DataTable(
+        headingRowColor: WidgetStatePropertyAll(Colors.grey.shade300),
         columns: getColumns(columns),
         rows: List.generate(10, (index) {
           return DataRow(cells: [
@@ -24,8 +25,7 @@ class CustomDataTable extends StatelessWidget {
                     backgroundColor: Colors.grey,
                     child: CircleAvatar(
                       radius: 16,
-                      backgroundImage:
-                          AssetImage(row[0].creatorImage),
+                      backgroundImage: AssetImage(row[0].creatorImage),
                     ),
                   ),
                   SizedBox(width: 10),
@@ -91,8 +91,7 @@ class CustomDataTable extends StatelessWidget {
             ),
             DataCell(
               Row(
-                children: List.generate(row[0].actionIcons.length,
-                    (index) {
+                children: List.generate(row[0].actionIcons.length, (index) {
                   return Padding(
                     padding: const EdgeInsets.only(right: 8),
                     child: Icon(row[0].actionIcons[index]),
